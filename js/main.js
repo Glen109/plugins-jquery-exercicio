@@ -1,11 +1,11 @@
 $(document).ready(function () {
     $('#carousel-imagens').slick({
         autoplay: true,
-        arrows: false
-    })
+    });
+
     $('#telefone').mask('(00) 00000-0000', {
         placeholder: '(DDD) 12345-6789'
-    })
+    });
 
     $('#cpf').mask('000.000.000-00', {
         placeholder: '123.456.789-00'
@@ -18,23 +18,23 @@ $(document).ready(function () {
     $('form').validate({
         rules: {
             nome: {
-                requerido: true
+                required: true
             },
             email: {
-                requerido: true,
+                required: true,
                 email: true
             },
             telefone: {
-                requerido: true
+                required: true
             },
             endereco: {
-                requerido: true
+                required: true
             },
             cep: {
-                requerido: true
+                required: true
             },
             cpf: {
-                requerido: true
+                required: true
             },
         },
         submitHandler: function (form) {
